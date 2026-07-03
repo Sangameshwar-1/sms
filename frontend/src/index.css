@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-gradient-start: #f8fafc;
+  --bg-gradient-end: #f1f5f9;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg-gradient-start);
+  background-attachment: fixed;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #0f172a;
+}
+
+/* Premium Glassmorphism */
+@layer components {
+  .glass-panel {
+    @apply bg-white/60 backdrop-blur-2xl border border-white/50 shadow-glass;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
+  }
+
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-xl border border-white/50 shadow-glass rounded-[24px] transition-all duration-300;
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
+    border-left: 1px solid rgba(255, 255, 255, 0.9);
+  }
+  
+  .glass-card:hover {
+    @apply shadow-glass-hover -translate-y-1 bg-white/80;
+  }
+
+  .glass-button {
+    @apply bg-white/70 backdrop-blur-md border border-white/50 shadow-sm rounded-xl font-bold transition-all duration-200 active:scale-95;
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
+  }
+  
+  .glass-button:hover {
+    @apply bg-white/90 shadow-md;
+  }
+
+  .glass-input {
+    @apply bg-white/50 backdrop-blur-md border border-white/40 shadow-inner rounded-xl focus:bg-white/80 focus:ring-2 focus:outline-none transition-all duration-200;
+  }
+}
+
+/* Typography Enhancements */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600;
+}
+
+.gradient-text-emerald {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-teal-500;
+}
+
+.gradient-text-amber {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-orange-500;
+}
+
+/* Animated Background BLOBS */
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  overflow: hidden;
+  background-color: #f8fafc;
+}
+
+.animated-blob {
+  position: absolute;
+  filter: blur(100px);
+  z-index: -1;
+  opacity: 0.6;
+  border-radius: 50%;
+  animation: blob 20s infinite ease-in-out;
+}
+
+.blob-1 {
+  top: -10%;
+  left: -10%;
+  width: 50vw;
+  height: 50vw;
+  background: #e0e7ff; /* indigo-100 */
+}
+
+.blob-2 {
+  bottom: -20%;
+  right: -10%;
+  width: 60vw;
+  height: 60vw;
+  background: #fae8ff; /* fuchsia-100 */
+  animation-delay: -5s;
+}
+
+.blob-3 {
+  top: 40%;
+  left: 40%;
+  width: 40vw;
+  height: 40vw;
+  background: #dcfce7; /* emerald-100 */
+  animation-delay: -10s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Custom Scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.6);
+}

@@ -1,0 +1,319 @@
+undefined:46: <button className="p-2 rounded-full hover:bg-slate-100 text-slate-500 transition-colors">
+undefined:52: <button className="p-2 rounded-full hover:bg-slate-100 text-slate-500 transition-colors">
+undefined:67: <button
+undefined:69: onClick={() => setSelectedDate(day.dateStr)}
+undefined:96: <button className="flex-1 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl font-bold transition-colors">Mark Present</button>
+undefined:97: <button className="flex-1 py-2 bg-rose-500 hover:bg-rose-600 text-white rounded-xl font-bold transition-colors">Mark Absent</button>
+undefined:11: <button className="flex items-center gap-2 glass-input px-4 py-2 bg-white/60 hover:bg-white/80 transition-all font-bold text-sm text-slate-700">
+undefined:22: <button
+undefined:24: onClick={() => setActiveChild(child)}
+undefined:34: navigate(path);
+undefined:38: <button
+undefined:39: onClick={handleClick}
+undefined:46: <button
+undefined:47: onClick={() => toggleClass(cls.name)}
+undefined:68: <button
+undefined:69: onClick={() => toggleExam(examKey)}
+undefined:109: <button className="text-xs font-bold text-indigo-600 hover:text-white bg-indigo-50 hover:bg-indigo-600 px-3 py-1.5 rounded transition-colors">
+undefined:117: <button className="w-full mt-2 py-2 border-2 border-dashed border-indigo-200 rounded-lg text-indigo-500 font-bold text-sm hover:bg-indigo-50 hover:border-indigo-400 transition-all">
+undefined:109: navigate('/login');
+undefined:113: navigate(route);
+undefined:133: <ListItemButton onClick={() => handleToggleCollapse(item.label)}>
+undefined:144: onClick={() => handleNavClick(child.route)}
+undefined:159: onClick={() => handleNavClick(item.route)}
+undefined:191: <IconButton size="small" onClick={() => setSidebarCollapsed(true)} className="text-slate-400 hover:text-indigo-600">
+undefined:253: <IconButton edge="start" onClick={() => setSidebarCollapsed(false)} className="text-slate-700 hover:text-indigo-600 transition-colors">
+undefined:258: <IconButton edge="start" onClick={toggleDrawer(true)} className="text-slate-700 hover:text-indigo-600 transition-colors">
+undefined:282: <IconButton className="text-slate-500 hover:text-indigo-600 bg-white/50 backdrop-blur-md shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5" size="small" onClick={() => navigate('/profile')}><AccountCircleOutlined fontSize="small" /></IconButton>
+undefined:38: <button onClick={prevMonth} className="glass-button p-2 text-slate-400 hover:text-indigo-600">
+undefined:41: <button onClick={nextMonth} className="glass-button p-2 text-slate-400 hover:text-indigo-600">
+undefined:61: <button
+undefined:62: onClick={() => onDateSelect && onDateSelect(new Date(currentDate.getFullYear(), currentDate.getMonth(), day))}
+undefined:16: <button
+undefined:17: onClick={() => setIsOpen(!isOpen)}
+undefined:110: <button
+undefined:112: onClick={() => onQuickFilterChange?.(chip.value)}
+undefined:127: <button
+undefined:128: onClick={() => onViewModeChange?.('list')}
+undefined:133: <button
+undefined:134: onClick={() => onViewModeChange?.('card')}
+undefined:144: <button
+undefined:145: onClick={() => setShowAdvanced(!showAdvanced)}
+undefined:26: onClick={onClose}
+undefined:52: <button
+undefined:53: onClick={onClose}
+undefined:33: onClick={onClose}
+undefined:55: <button
+undefined:56: onClick={onClose}
+undefined:50: <button onClick={onApprove} className="glass-button flex-1 bg-gradient-to-r from-emerald-400 to-teal-500 text-white font-bold py-2 hover:shadow-glow-emerald border-0">
+undefined:53: <button onClick={onReject} className="glass-button flex-1 bg-gradient-to-r from-red-400 to-rose-500 text-white font-bold py-2 hover:shadow-glow-rose border-0">
+undefined:44: <button onClick={onViewDetails} className="p-2 rounded-full text-indigo-500 bg-indigo-50 hover:bg-indigo-100 transition-colors" title="View Details">
+undefined:47: <button onClick={onEdit} className="p-2 rounded-full text-pink-500 bg-pink-50 hover:bg-pink-100 transition-colors" title="Edit Profile">
+undefined:66: onClick={() => onRowClick?.(row)}
+undefined:84: <button className="p-1 text-slate-400 hover:text-slate-600">
+undefined:133: onClick={() => onRowClick?.(row)}
+undefined:141: <button className="p-2 text-slate-400 hover:text-indigo-600 rounded-lg hover:bg-indigo-50 transition-colors">
+undefined:39: <button onClick={onViewDetails} className="p-2 rounded-xl text-indigo-600 hover:bg-indigo-50 transition-colors" title="View Details">
+undefined:42: <button className="p-2 rounded-xl text-emerald-600 hover:bg-emerald-50 transition-colors" title="View Attendance">
+undefined:45: <button className="p-2 rounded-xl text-purple-600 hover:bg-purple-50 transition-colors" title="View Results">
+undefined:48: <button onClick={onEdit} className="p-2 rounded-xl text-slate-500 hover:bg-slate-100 transition-colors" title="Edit Profile">
+undefined:48: <button onClick={onViewDetails} className="p-2 rounded-full text-indigo-500 bg-indigo-50 hover:bg-indigo-100 transition-colors" title="View Details">
+undefined:51: <button className="p-2 rounded-full text-slate-400 bg-slate-50 hover:bg-slate-100 transition-colors" title="Assign Subjects">
+undefined:54: <button onClick={onEdit} className="p-2 rounded-full text-purple-500 bg-purple-50 hover:bg-purple-100 transition-colors" title="Edit Profile">
+undefined:62: <button
+undefined:63: onClick={() => openModal()}
+undefined:89: onClick={() => navigate(`/class/${cls.slug}`)}
+undefined:108: <button
+undefined:109: onClick={(e) => { e.stopPropagation(); openModal(cls); }}
+undefined:114: <button
+undefined:115: onClick={(e) => { e.stopPropagation(); handleDelete(cls.id); }}
+undefined:133: <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[999]" onClick={closeModal} />
+undefined:140: <button onClick={closeModal} className="p-2 rounded-full hover:bg-slate-100 text-slate-400 transition-colors"><Close fontSize="small" /></button>
+undefined:162: <button type="button" onClick={closeModal} className="flex-1 py-3 rounded-xl font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 transition-colors">Cancel</button>
+undefined:163: <button type="submit" className="flex-1 py-3 rounded-xl font-bold text-white bg-indigo-600 hover:bg-indigo-700 transition-colors shadow-glow-indigo">Save Class</button>
+undefined:69: <button
+undefined:70: onClick={() => openModal()}
+undefined:96: onClick={() => navigate(`/subject/${subj.slug}`)}
+undefined:115: <button
+undefined:116: onClick={(e) => { e.stopPropagation(); openModal(subj); }}
+undefined:121: <button
+undefined:122: onClick={(e) => { e.stopPropagation(); handleDelete(subj.id); }}
+undefined:140: <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[999]" onClick={closeModal} />
+undefined:147: <button onClick={closeModal} className="p-2 rounded-full hover:bg-slate-100 text-slate-400 transition-colors"><Close fontSize="small" /></button>
+undefined:175: <button type="button" onClick={closeModal} className="flex-1 py-3 rounded-xl font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 transition-colors">Cancel</button>
+undefined:176: <button type="submit" className="flex-1 py-3 rounded-xl font-bold text-white bg-purple-600 hover:bg-purple-700 transition-colors shadow-glow-purple">Save Subject</button>
+undefined:53: <button
+undefined:54: onClick={() => openModal()}
+undefined:99: <button onClick={() => openModal(assign)} className="p-2 text-indigo-600 hover:bg-indigo-50 rounded-lg transition-colors">
+undefined:102: <button onClick={() => handleDelete(assign.id)} className="p-2 text-rose-600 hover:bg-rose-50 rounded-lg transition-colors">
+undefined:119: <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[999]" onClick={closeModal} />
+undefined:126: <button onClick={closeModal} className="p-2 rounded-full hover:bg-slate-100 text-slate-400 transition-colors"><Close fontSize="small" /></button>
+undefined:165: <button type="button" onClick={closeModal} className="flex-1 py-3 rounded-xl font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 transition-colors">Cancel</button>
+undefined:166: <button type="submit" className="flex-1 py-3 rounded-xl font-bold text-white bg-sky-600 hover:bg-sky-700 transition-colors shadow-glow-indigo">Save Assignment</button>
+undefined:31: <button key={s.label} onClick={() => navigate(s.route)} className="flex items-center gap-4 p-5 hover:bg-slate-50 transition-colors text-left group">
+undefined:41: <button onClick={() => navigate('/attendance')} className="flex items-center gap-4 p-5 hover:bg-slate-50 transition-colors text-left">
+undefined:70: <button key={i} onClick={() => navigate(action.route)} className="w-full flex items-center justify-between px-6 py-4 border-b border-slate-50 hover:bg-slate-50 transition-colors group last:border-0">
+undefined:129: <button onClick={() => navigate('/roles/students')} className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-lg hover:bg-indigo-100 transition-colors">View</button>
+undefined:142: <button onClick={() => navigate('/notices')} className="text-xs font-bold text-indigo-600 hover:underline">+ New</button>
+undefined:150: <div key={i} className="px-5 py-3.5 hover:bg-slate-50 transition-colors cursor-pointer" onClick={() => navigate('/notices')}>
+undefined:48: <button onClick={handleExport} className="glass-button flex items-center gap-2 px-4 py-2 bg-white text-indigo-600 font-bold border border-indigo-100 hover:bg-indigo-50">
+undefined:81: onClick={() => setExpandedId(expandedId === cls.id ? null : cls.id)}
+undefined:119: <button className="bg-emerald-50 text-emerald-600 px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-emerald-100 transition-colors flex items-center gap-1">
+undefined:84: <button
+undefined:86: onClick={() => setActiveTab(tab)}
+undefined:143: <button onClick={() => handleApprove(leave.id)} className="flex-1 py-2 bg-emerald-50 text-emerald-600 border border-emerald-100 hover:bg-emerald-100 font-bold rounded-xl flex justify-center items-center gap-1 transition-colors">
+undefined:146: <button onClick={() => openRejectModal(leave.id)} className="flex-1 py-2 bg-rose-50 text-rose-600 border border-rose-100 hover:bg-rose-100 font-bold rounded-xl flex justify-center items-center gap-1 transition-colors">
+undefined:165: <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[999]" onClick={() => setIsRejectModalOpen(false)} />
+undefined:172: <button onClick={() => setIsRejectModalOpen(false)} className="p-2 rounded-full hover:bg-slate-100 text-slate-400 transition-colors"><CloseIcon fontSize="small" /></button>
+undefined:181: <button type="button" onClick={() => setIsRejectModalOpen(false)} className="flex-1 py-3 rounded-xl font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 transition-colors">Cancel</button>
+undefined:182: <button type="submit" className="flex-1 py-3 rounded-xl font-bold text-white bg-rose-600 hover:bg-rose-700 transition-colors shadow-glow-rose">Confirm Reject</button>
+undefined:60: <button className="text-xs font-bold px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-600 hover:bg-indigo-100 transition-colors">
+undefined:63: <button className="text-xs font-bold px-3 py-1.5 rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors">
+undefined:30: <button onClick={handleExport} className="glass-button flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white font-bold border-0 shadow-glow-indigo">
+undefined:39: <button
+undefined:40: key={tab} onClick={() => setActiveTab(tab)}
+undefined:88: <button className="glass-button flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow-glow-emerald border-0">
+undefined:90: <button className="glass-button flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-glow-rose border-0">
+undefined:27: <Link to={`/student/${row.id}`} className="font-bold text-indigo-600 hover:underline">{val}</Link>
+undefined:93: <button className="glass-button flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-glow-indigo border-0">
+undefined:90: <button className="glass-button flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-glow-rose border-0">
+undefined:12: <button className="glass-button flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-emerald-400 to-teal-500 text-white shadow-glow-emerald border-0 font-bold">
+undefined:60: <button className={`w-12 h-6 rounded-full transition-colors relative ${pref.active ? 'bg-emerald-500' : 'bg-slate-300'}`}>
+undefined:78: <button className="w-8 h-8 rounded-full bg-indigo-500 ring-2 ring-offset-2 ring-indigo-500"></button>
+undefined:79: <button className="w-8 h-8 rounded-full bg-emerald-500 opacity-50 hover:opacity-100 transition-opacity"></button>
+undefined:80: <button className="w-8 h-8 rounded-full bg-rose-500 opacity-50 hover:opacity-100 transition-opacity"></button>
+undefined:81: <button className="w-8 h-8 rounded-full bg-sky-500 opacity-50 hover:opacity-100 transition-opacity"></button>
+undefined:45: <button className="glass-button flex items-center gap-2 px-4 py-2 text-slate-600 font-bold">
+undefined:48: <button className="glass-button flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-bold border-0 shadow-glow-indigo">
+undefined:83: <button className="text-xs font-bold px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-600 hover:bg-indigo-100 transition-colors" onClick={() => console.log('Details', student.StudentId)}>
+undefined:86: <button className="text-xs font-bold px-3 py-1.5 rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors" onClick={() => console.log('Edit', student.StudentId)}>
+undefined:57: <button className="text-xs font-bold px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-600 hover:bg-indigo-100 transition-colors">
+undefined:60: <button className="text-xs font-bold px-3 py-1.5 rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors">
+undefined:63: <button
+undefined:64: onClick={() => navigate(-1)}
+undefined:96: <button
+undefined:97: onClick={() => isEditing ? handleSave() : setIsEditing(true)}
+undefined:159: <button
+undefined:160: onClick={() => setActiveTab('students')}
+undefined:169: <button
+undefined:170: onClick={() => setActiveTab('attendance')}
+undefined:74: <button
+undefined:75: onClick={() => navigate(-1)}
+undefined:108: <button
+undefined:109: onClick={() => isEditing ? handleSave() : setIsEditing(true)}
+undefined:171: <button
+undefined:172: onClick={() => setActiveTab('academic')}
+undefined:181: <button
+undefined:182: onClick={() => setActiveTab('attendance')}
+undefined:191: <button
+undefined:192: onClick={() => setActiveTab('leaves')}
+undefined:61: <button
+undefined:62: onClick={() => navigate(-1)}
+undefined:95: <button
+undefined:96: onClick={() => isEditing ? handleSave() : setIsEditing(true)}
+undefined:142: <button
+undefined:143: onClick={() => setActiveTab('enrolled')}
+undefined:152: <button
+undefined:153: onClick={() => setActiveTab('performance')}
+undefined:107: <button
+undefined:41: onClick={() => navigate('/login')}
+undefined:80: onClick={() => navigate('/login')}
+undefined:169: <button onClick={() => setViewMode('list')} className="text-indigo-600 hover:text-indigo-800 transition-colors">List</button>
+undefined:174: <button onClick={() => setViewMode('details')} className="text-indigo-600 hover:text-indigo-800 transition-colors">Details</button>
+undefined:211: onClick={() => handleRowClick(row)}
+undefined:255: <button onClick={() => setViewMode('list')} className="glass-button flex items-center gap-2 px-6 py-3 text-slate-600">
+undefined:258: <button onClick={handleEditClick} className="glass-button flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 text-white border-0 shadow-glow-indigo hover:shadow-glow-indigo">
+undefined:292: <button onClick={() => setViewMode('details')} disabled={saving} className="glass-button flex items-center gap-2 px-6 py-3 text-slate-600 disabled:opacity-50">
+undefined:295: <button onClick={handleSave} disabled={saving} className="glass-button flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-400 to-teal-500 text-white border-0 shadow-glow-emerald hover:shadow-glow-emerald disabled:opacity-50">
+undefined:21: navigate('/dashboard');
+undefined:71: onClick={() => navigate('/forgot-password')}
+undefined:96: onClick={() => { setUsername('admin'); setPassword('123'); setTimeout(() => document.querySelector('form')?.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true })), 100); }}
+undefined:102: onClick={() => { setUsername('teacher'); setPassword('123'); setTimeout(() => document.querySelector('form')?.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true })), 100); }}
+undefined:108: onClick={() => { setUsername('parent'); setPassword('123'); setTimeout(() => document.querySelector('form')?.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true })), 100); }}
+undefined:114: onClick={() => { setUsername('student'); setPassword('123'); setTimeout(() => document.querySelector('form')?.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true })), 100); }}
+undefined:67: <button
+undefined:69: onClick={() => setSelectedDate(date.toString())}
+undefined:48: <button onClick={() => navigate('/parent/attendance')} className="flex items-center gap-4 p-5 hover:bg-slate-50 transition-colors text-left group">
+undefined:58: <button onClick={() => navigate('/parent/results')} className="flex items-center gap-4 p-5 hover:bg-slate-50 transition-colors text-left group">
+undefined:68: <button className="flex items-center gap-4 p-5 hover:bg-slate-50 transition-colors text-left group">
+undefined:78: <button className="flex items-center gap-4 p-5 hover:bg-slate-50 transition-colors text-left group">
+undefined:125: <button onClick={() => navigate('/parent/results')} className="text-xs font-bold text-indigo-600 hover:underline">View All</button>
+undefined:132: <div key={i} className="flex justify-between items-center px-5 py-4 hover:bg-slate-50 transition-colors cursor-pointer" onClick={() => navigate('/parent/results')}>
+undefined:161: <div key={i} className="px-5 py-3.5 hover:bg-slate-50 transition-colors cursor-pointer" onClick={() => navigate('/notices')}>
+undefined:81: onClick={() => setExpandedExam(isExpanded ? null : examKey)}
+undefined:74: onClick={() => setExpandedSubj(expandedSubj === subj.id ? null : subj.id)}
+undefined:130: onClick={() => setShowPrevious(!showPrevious)}
+undefined:61: <button
+undefined:62: onClick={() => openModal()}
+undefined:73: <button
+undefined:75: onClick={() => setQuickFilter(chip)}
+undefined:142: <button onClick={() => openModal(exam)} className="w-8 h-8 rounded-lg bg-slate-50 text-slate-500 hover:bg-indigo-50 hover:text-indigo-600 flex items-center justify-center transition-colors">
+undefined:145: <button className="w-8 h-8 rounded-lg bg-slate-50 text-slate-500 hover:bg-rose-50 hover:text-rose-600 flex items-center justify-center transition-colors">
+undefined:150: <button className="text-indigo-600 hover:text-indigo-800 font-bold text-sm bg-indigo-50 hover:bg-indigo-100 px-3 py-1.5 rounded-lg transition-colors">
+undefined:168: <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[999]" onClick={closeModal} />
+undefined:175: <button onClick={closeModal} className="p-2 rounded-full hover:bg-slate-100 text-slate-400 transition-colors"><Close fontSize="small" /></button>
+undefined:211: <button type="button" onClick={closeModal} className="flex-1 py-3 rounded-xl font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 transition-colors">Cancel</button>
+undefined:212: <button type="submit" className="flex-1 py-3 rounded-xl font-bold text-white bg-indigo-600 hover:bg-indigo-700 transition-colors shadow-glow-indigo">Save Exam</button>
+undefined:86: <button
+undefined:87: onClick={() => setQuery('')}
+undefined:104: <button
+undefined:106: onClick={() => setQuery(search)}
+undefined:77: <button
+undefined:78: onClick={() => openModal()}
+undefined:110: <button onClick={() => togglePin(notice.id)} className="p-2 text-slate-400 hover:text-amber-500 hover:bg-amber-50 rounded-lg transition-colors">
+undefined:113: <button onClick={() => openModal(notice)} className="p-2 text-indigo-400 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition-colors">
+undefined:116: <button onClick={() => handleDelete(notice.id)} className="p-2 text-rose-400 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors">
+undefined:131: <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[999]" onClick={closeModal} />
+undefined:138: <button onClick={closeModal} className="p-2 rounded-full hover:bg-slate-100 text-slate-400 transition-colors"><Close fontSize="small" /></button>
+undefined:174: <button type="button" onClick={closeModal} className="flex-1 py-3 rounded-xl font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 transition-colors">Cancel</button>
+undefined:175: <button type="submit" className="flex-1 py-3 rounded-xl font-bold text-white bg-amber-500 hover:bg-amber-600 transition-colors shadow-glow-amber">Publish</button>
+undefined:65: <button
+undefined:66: onClick={markAllRead}
+undefined:76: <button
+undefined:78: onClick={() => setActiveTab(tab)}
+undefined:112: <button
+undefined:113: onClick={() => markAsRead(notif.id)}
+undefined:47: <button
+undefined:48: onClick={() => setIsFormOpen(true)}
+undefined:65: <button onClick={() => setIsFormOpen(false)} className="text-slate-400 hover:text-slate-600"><Close /></button>
+undefined:95: <button type="button" className="glass-button px-4 py-2 text-slate-600 text-sm font-bold flex items-center gap-2 border border-slate-200">
+undefined:103: <button type="button" onClick={() => setIsFormOpen(false)} className="px-6 py-2.5 rounded-xl font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 transition-colors">Cancel</button>
+undefined:104: <button type="submit" className="px-6 py-2.5 rounded-xl font-bold text-white bg-amber-500 hover:bg-amber-600 transition-colors shadow-glow-amber">
+undefined:141: <button
+undefined:142: onClick={() => handleCancel(leave.id)}
+undefined:106: <button type="submit" className="glass-button flex items-center gap-2 px-6 py-2.5 bg-indigo-600 text-white font-bold shadow-glow-indigo border-0">
+undefined:134: <button type="submit" className="glass-button flex items-center gap-2 px-6 py-2.5 bg-slate-800 text-white font-bold border-0 hover:bg-slate-900 transition-colors">
+undefined:181: <button className="w-full py-2 bg-white text-slate-700 font-bold text-sm border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors">
+undefined:184: <button onClick={() => setIsDeleteModalOpen(true)} className="w-full py-2 bg-rose-100 text-rose-600 font-bold text-sm border border-rose-200 rounded-lg hover:bg-rose-200 transition-colors">
+undefined:197: <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[999]" onClick={() => setIsDeleteModalOpen(false)} />
+undefined:209: <button onClick={() => setIsDeleteModalOpen(false)} className="flex-1 py-3 rounded-xl font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 transition-colors">Cancel</button>
+undefined:210: <button onClick={() => { setIsDeleteModalOpen(false); alert('Account deletion requested.'); }} className="flex-1 py-3 rounded-xl font-bold text-white bg-rose-600 hover:bg-rose-700 transition-colors shadow-glow-rose">Delete</button>
+undefined:57: <button
+undefined:59: onClick={() => setSelectedDate(date.toString())}
+undefined:20: <button onClick={() => navigate('/student/attendance')} className="flex items-center gap-4 p-5 hover:bg-slate-50 transition-colors text-left group">
+undefined:30: <button onClick={() => navigate('/student/subjects')} className="flex items-center gap-4 p-5 hover:bg-slate-50 transition-colors text-left group">
+undefined:40: <button onClick={() => navigate('/student/results')} className="flex items-center gap-4 p-5 hover:bg-slate-50 transition-colors text-left group">
+undefined:50: <button onClick={() => navigate('/student/exams')} className="flex items-center gap-4 p-5 hover:bg-slate-50 transition-colors text-left group">
+undefined:97: <button onClick={() => navigate('/student/subjects')} className="text-xs font-bold text-indigo-600 hover:underline">View All</button>
+undefined:105: <div key={i} className="px-5 py-3.5 hover:bg-slate-50 transition-colors cursor-pointer" onClick={() => navigate('/student/subjects')}>
+undefined:127: <button onClick={() => navigate('/student/exams')} className="text-xs font-bold text-indigo-600 hover:underline">View All</button>
+undefined:134: <div key={i} className="flex justify-between items-center px-5 py-4 hover:bg-slate-50 transition-colors cursor-pointer" onClick={() => navigate('/student/exams')}>
+undefined:151: <button onClick={() => navigate('/student/results')} className="text-xs font-bold text-indigo-600 hover:underline">View All</button>
+undefined:158: <div key={i} className="flex justify-between items-center px-5 py-4 hover:bg-slate-50 transition-colors cursor-pointer" onClick={() => navigate('/student/results')}>
+undefined:77: onClick={() => setExpandedExam(isExpanded ? null : examKey)}
+undefined:43: onClick={() => navigate(`/subject/${sub.id}`)}
+undefined:68: <button className="text-purple-600 hover:bg-purple-50 p-2 rounded-lg transition-colors flex items-center justify-end w-full">
+undefined:57: <button
+undefined:58: onClick={() => setActiveTab('classes')}
+undefined:67: <button
+undefined:68: onClick={() => setActiveTab('subjects')}
+undefined:98: onClick={() => navigate(`/class/${cls.id}`)}
+undefined:130: <button className="text-indigo-600 hover:bg-indigo-50 p-2 rounded-lg transition-colors flex items-center justify-end w-full">
+undefined:160: onClick={() => navigate(`/subject/${subj.id}`)}
+undefined:187: <button className="text-emerald-600 hover:bg-emerald-50 p-2 rounded-lg transition-colors flex items-center justify-end w-full">
+undefined:65: <button
+undefined:67: onClick={() => setSelectedDate(date.toString())}
+undefined:96: <button className={`px-4 py-2 rounded-xl flex items-center gap-1 font-bold text-xs transition-colors ${student.status === 'present' ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-100 text-slate-400 hover:bg-emerald-50'}`}>
+undefined:99: <button className={`px-4 py-2 rounded-xl flex items-center gap-1 font-bold text-xs transition-colors ${student.status === 'absent' ? 'bg-rose-100 text-rose-700' : 'bg-slate-100 text-slate-400 hover:bg-rose-50'}`}>
+undefined:108: <button className="glass-button px-8 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-glow-indigo border-0 font-bold">
+undefined:64: <button className="flex-1 md:flex-none px-4 py-2 rounded-xl flex items-center justify-center gap-2 font-bold text-sm bg-indigo-50 text-indigo-600 hover:bg-indigo-100 transition-colors">
+undefined:67: <button className="flex-1 md:flex-none px-4 py-2 rounded-xl flex items-center justify-center gap-2 font-bold text-sm bg-slate-100 text-slate-400 hover:bg-slate-200 transition-colors">
+undefined:16: <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded-xl shadow-lg shadow-indigo-200 transition-all">
+undefined:74: <button onClick={() => markAll('Present')} className="text-xs font-bold px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-600 hover:bg-emerald-100 transition-colors">Mark All Present</button>
+undefined:94: <button
+undefined:95: onClick={() => handleStatusChange(student.id, 'Present')}
+undefined:104: <button
+undefined:105: onClick={() => handleStatusChange(student.id, 'Absent')}
+undefined:114: <button
+undefined:115: onClick={() => handleStatusChange(student.id, 'Leave')}
+undefined:143: <button
+undefined:144: onClick={handleSubmit}
+undefined:21: <button onClick={() => navigate('/teacher/academics')} className="flex items-center gap-4 p-5 hover:bg-slate-50 transition-colors text-left group">
+undefined:31: <button onClick={() => navigate('/teacher/academics')} className="flex items-center gap-4 p-5 hover:bg-slate-50 transition-colors text-left group">
+undefined:41: <button onClick={() => navigate('/teacher/attendance')} className="flex items-center gap-4 p-5 hover:bg-slate-50 transition-colors text-left group">
+undefined:51: <button onClick={() => navigate('/teacher/exams')} className="flex items-center gap-4 p-5 hover:bg-slate-50 transition-colors text-left group">
+undefined:73: <button onClick={() => navigate('/teacher/academics')} className="text-xs font-bold text-indigo-600 hover:underline">View All</button>
+undefined:80: <div key={i} className="flex items-center justify-between px-5 py-3.5 hover:bg-slate-50 transition-colors cursor-pointer" onClick={() => navigate(`/class/${c.name.split(' ')[1]}`)}>
+undefined:99: <button onClick={() => navigate('/teacher/academics')} className="text-xs font-bold text-indigo-600 hover:underline">View All</button>
+undefined:106: <div key={i} className="flex flex-col gap-2 px-5 py-3.5 hover:bg-slate-50 transition-colors cursor-pointer" onClick={() => navigate(`/subject/${s.name.toLowerCase()}`)}>
+undefined:130: <div className="flex items-center justify-between px-5 py-4 hover:bg-slate-50 transition-colors cursor-pointer" onClick={() => navigate('/teacher/attendance')}>
+undefined:149: <button onClick={() => navigate('/teacher/exams')} className="text-xs font-bold text-indigo-600 hover:underline">View All</button>
+undefined:155: <div key={i} className="flex justify-between items-center px-5 py-4 hover:bg-slate-50 transition-colors cursor-pointer" onClick={() => navigate('/teacher/exams')}>
+undefined:43: onClick={() => navigate(`/subject/${exam.subjectId}`)}
+undefined:75: <button className="text-indigo-600 hover:bg-indigo-50 p-2 rounded-lg transition-colors flex items-center justify-end w-full gap-2">
+undefined:43: <button
+undefined:44: onClick={() => setIsFormOpen(true)}
+undefined:61: <button onClick={() => setIsFormOpen(false)} className="text-slate-400 hover:text-slate-600"><Close /></button>
+undefined:90: <button type="button" className="glass-button px-4 py-2 text-slate-600 text-sm font-bold flex items-center gap-2 border border-slate-200">
+undefined:97: <button type="button" onClick={() => setIsFormOpen(false)} className="px-6 py-2.5 rounded-xl font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 transition-colors">Cancel</button>
+undefined:98: <button type="submit" className="px-6 py-2.5 rounded-xl font-bold text-white bg-purple-600 hover:bg-purple-700 transition-colors shadow-glow-purple flex items-center gap-2">
+undefined:137: <button
+undefined:138: onClick={() => handleCancel(leave.id)}
+undefined:48: <button
+undefined:49: onClick={() => navigate(-1)}
+undefined:75: <button
+undefined:77: onClick={() => setActiveTab(tab.id)}
+undefined:54: <button
+undefined:55: onClick={() => navigate(-1)}
+undefined:91: <button
+undefined:93: onClick={() => setActiveTab(tab.id)}
+undefined:136: onClick={() => navigate(`/teacher/class/student/${s.id}`)}
+undefined:163: <button className="bg-emerald-600 text-white px-4 py-2 rounded-lg font-bold text-sm shadow-md shadow-emerald-200 hover:bg-emerald-700 transition-colors">
+undefined:246: <button className="flex-1 py-2 bg-emerald-600 text-white rounded-lg font-bold text-sm hover:bg-emerald-700 transition-colors flex items-center justify-center gap-1 shadow-sm">
+undefined:249: <button className="flex-1 py-2 bg-rose-50 text-rose-600 border border-rose-200 rounded-lg font-bold text-sm hover:bg-rose-100 transition-colors flex items-center justify-center gap-1">
+undefined:42: <button
+undefined:43: onClick={() => navigate(-1)}
+undefined:111: <button
+undefined:112: onClick={() => setIsEditingMarks(true)}
+undefined:118: <button
+undefined:119: onClick={handleSave}
+undefined:45: navigate(`/teacher/subject/${data.id}/student/${student.id}`);
+undefined:70: <button
+undefined:71: onClick={(e) => { e.stopPropagation(); handleViewStudent(row); }}
+undefined:88: <button
+undefined:89: onClick={() => navigate(-1)}
+undefined:117: <button
+undefined:119: onClick={() => setActiveTab(tab.id)}
+undefined:174: <button className="glass-button flex items-center gap-1 bg-indigo-50 text-indigo-700 hover:bg-indigo-100 font-bold text-sm">
+undefined:209: <button className="glass-button flex items-center gap-1 bg-amber-50 text-amber-700 hover:bg-amber-100 font-bold text-sm">
+undefined:225: <button className="text-slate-400 hover:text-indigo-600 transition-colors">

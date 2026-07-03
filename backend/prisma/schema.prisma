@@ -1,0 +1,207 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  user_id          Int     @id @default(autoincrement())
+  username         String  @unique
+  password_hash    String
+  role             String  // "Admin", "Teacher", "Parent", "Student"
+  linked_entity_id Int
+  status           String  
+}
+
+model Admin {
+  AdminId   Int      @id @default(autoincrement())
+  Name      String
+  Email     String   @unique
+  Phone     String?
+  CreatedAt DateTime @default(now())
+}
+
+model Teacher {
+  TeacherId      Int      @id @default(autoincrement())
+  EmployeeId     String   @unique
+  Name           String
+  Email          String   @unique
+  Phone          String?
+  Qualification  String?
+  Experience     String?
+  Status         String
+  Assignments    TeacherAssignment[]
+}
+
+model Parent {
+  ParentId   Int      @id @default(autoincrement())
+  Name       String
+  Email      String   @unique
+  Phone      String?
+  Occupation String?
+  Address    String?
+  Students   Student[]
+}
+
+model Student {
+  StudentId        Int      @id @default(autoincrement())
+  AdmissionNo      String   @unique
+  Name             String
+  DOB              DateTime
+  Gender           String
+  CurrentClassId   Int
+  CurrentSectionId Int
+  ParentId         Int
+  Status           String
+  
+  Parent           Parent   @relation(fields: [ParentId], references: [ParentId])
+  Class            Class    @relation(fields: [CurrentClassId], references: [ClassId])
+  Section          Section  @relation(fields: [CurrentSectionId], references: [SectionId])
+
+  Marks            Mark[]
+  Attendance       Attendance[]
+  LeaveRequests    LeaveRequest[]
+  ClassHistory     StudentClassHistory[]
+}
+
+model Class {
+  ClassId      Int      @id @default(autoincrement())
+  ClassName    String
+  AcademicYear String
+  
+  Sections           Section[]
+  Subjects           Subject[]
+  Students           Student[]
+  TeacherAssignments TeacherAssignment[]
+  Exams              Exam[]
+  Attendance         Attendance[]
+}
+
+model Section {
+  SectionId   Int      @id @default(autoincrement())
+  ClassId     Int
+  SectionName String
+  
+  Class              Class    @relation(fields: [ClassId], references: [ClassId])
+  Students           Student[]
+  TeacherAssignments TeacherAssignment[]
+  Exams              Exam[]
+  Attendance         Attendance[]
+}
+
+model Subject {
+  SubjectId   Int      @id @default(autoincrement())
+  SubjectName String
+  ClassId     Int
+  Description String?
+
+  Class              Class    @relation(fields: [ClassId], references: [ClassId])
+  TeacherAssignments TeacherAssignment[]
+  Exams              Exam[]
+  Attendance         Attendance[]
+}
+
+model TeacherAssignment {
+  AssignmentId Int      @id @default(autoincrement())
+  TeacherId    Int
+  ClassId      Int
+  SectionId    Int
+  SubjectId    Int
+
+  Teacher      Teacher  @relation(fields: [TeacherId], references: [TeacherId])
+  Class        Class    @relation(fields: [ClassId], references: [ClassId])
+  Section      Section  @relation(fields: [SectionId], references: [SectionId])
+  Subject      Subject  @relation(fields: [SubjectId], references: [SubjectId])
+}
+
+model Exam {
+  ExamId           Int      @id @default(autoincrement())
+  ClassId          Int
+  SectionId        Int
+  SubjectId        Int
+  ExamType         String   // Slip Test, Unit Test, FA1, SA1, FA2, SA2
+  Date             DateTime
+  MaxMarks         Int
+  CreatedByTeacher Int
+
+  Class            Class    @relation(fields: [ClassId], references: [ClassId])
+  Section          Section  @relation(fields: [SectionId], references: [SectionId])
+  Subject          Subject  @relation(fields: [SubjectId], references: [SubjectId])
+  Marks            Mark[]
+}
+
+model Mark {
+  MarkId        Int      @id @default(autoincrement())
+  StudentId     Int
+  ExamId        Int
+  ObtainedMarks Float
+  Grade         String?
+  Remarks       String?
+
+  Student       Student  @relation(fields: [StudentId], references: [StudentId])
+  Exam          Exam     @relation(fields: [ExamId], references: [ExamId])
+}
+
+model Attendance {
+  AttendanceId Int      @id @default(autoincrement())
+  ClassId      Int
+  SectionId    Int
+  SubjectId    Int
+  Date         DateTime
+  StudentId    Int
+  Status       String   // Present, Absent, Leave
+
+  Class        Class    @relation(fields: [ClassId], references: [ClassId])
+  Section      Section  @relation(fields: [SectionId], references: [SectionId])
+  Subject      Subject  @relation(fields: [SubjectId], references: [SubjectId])
+  Student      Student  @relation(fields: [StudentId], references: [StudentId])
+}
+
+model LeaveRequest {
+  LeaveId     Int      @id @default(autoincrement())
+  StudentId   Int
+  RequestedBy String   // Parent, Student
+  FromDate    DateTime
+  ToDate      DateTime
+  Reason      String
+  Status      String   // Pending, Approved, Rejected
+  ApprovedBy  Int?     // TeacherId
+
+  Student     Student  @relation(fields: [StudentId], references: [StudentId])
+}
+
+model AcademicYear {
+  YearId    Int      @id @default(autoincrement())
+  YearName  String   
+  StartDate DateTime
+  EndDate   DateTime
+  IsActive  Boolean  @default(false)
+}
+
+model StudentClassHistory {
+  HistoryId   Int      @id @default(autoincrement())
+  StudentId   Int
+  ClassId     Int
+  SectionId   Int
+  YearId      Int
+
+  Student     Student  @relation(fields: [StudentId], references: [StudentId])
+}
+
+model UIConfig {
+  ConfigId    Int      @id @default(autoincrement())
+  Role        String   // Admin, Teacher, Parent, Student
+  ConfigType  String   // navigation, dashboard, screens
+  ConfigData  Json
+}
+
+model Notice {
+  NoticeId   Int      @id @default(autoincrement())
+  Title      String
+  Content    String
+  Date       DateTime @default(now())
+  CreatedBy  Int
+  TargetRole String?  // null = all roles
+}
